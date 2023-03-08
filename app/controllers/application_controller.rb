@@ -65,7 +65,7 @@ class ApplicationController < Sinatra::Base
         farmer = Farmer.find_by(id: params[:id])  
         farmer.destroy
         {
-          "message":"Successfuly deleted farmer",
+          "message":"Successfully deleted farmer",
           "Status":"200_OK"
         }.to_json()
       end

@@ -16,6 +16,7 @@ ActiveRecord::Schema.define(version: 2023_03_07_192923) do
     t.string "name"
     t.string "email"
     t.string "contact"
+    t.string "goods"
     t.string "password_digest"
   end
 

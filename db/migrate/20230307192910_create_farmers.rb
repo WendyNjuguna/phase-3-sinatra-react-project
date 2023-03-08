@@ -4,6 +4,7 @@ class CreateFarmers < ActiveRecord::Migration[6.1]
           t.string :name
           t.string :email
           t.string :contact
+          t.string :goods
           t.string :password_digest
           end
         end

@@ -7,18 +7,21 @@ firstfarmer = Farmer.create(
     name: "Wendy",
     email: "wendy287@gmail.com",
     contact: "0985623789",
+    goods: "pigs",
     password: "pass234"
 )
 secondfarmer = Farmer.create( 
     name: "Njuguna",
     email: "njuguna287@gmail.com",
     contact: "43579",
+    goods: "ostrich",
     password: "rattin..08"
 )
 thirdfarmer = Farmer.create( 
     name: "Wilberforce",
     email: "wilberforce@gmail.com",
     contact: "265765",
+    goods: " broiler Chicken",
     password: "quest53e3.."
 )
 

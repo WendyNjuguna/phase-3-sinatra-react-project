@@ -35,6 +35,7 @@ class ApplicationController < Sinatra::Base
         name: params[:name],
         email: params[:email],
         contact: params[:contact],
+        goods:  params[:goods],
         password_digest: params[:password_digest]
       ) 
       farmer.save()
@@ -44,6 +45,29 @@ class ApplicationController < Sinatra::Base
       }.to_json()
     end
 
+    # update farmer goods
+        patch "/farmer/update/:id" do
+          farmer = Farmer.find_by(id: params[:id])
+    
+          farmer.update(
+            name: params[:name],
+            email: params[:email],
+            contact: params[:contact],
+            goods:  params[:goods],
+            password_digest: params[:password_digest]     
+          )
+          farmer.to_json()
+        end
 
-
+  # Delete
+      # delete a car
+      delete "/farmer/:id" do
+        farmer = Farmer.find_by(id: params[:id])  
+        farmer.destroy
+        {
+          "message":"Successfuly deleted farmer",
+          "Status":"200_OK"
+        }.to_json()
+      end
+  
   end

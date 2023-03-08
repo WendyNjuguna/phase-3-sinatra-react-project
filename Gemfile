@@ -43,6 +43,10 @@ group :development do
   gem "rerun"
 end
 
+
+# bcrypt gem
+gem 'bcrypt', '~> 3.1', require: 'bcrypt'
+
 # These gems will only be used when we are running tests
 group :test do
   gem "database_cleaner", "~> 2.0"

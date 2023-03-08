@@ -1,6 +1,6 @@
 class CreateFarmers < ActiveRecord::Migration[6.1]
         def change
-          create_table :owners do |t|
+          create_table :farmers do |t|
           t.string :name
           t.string :email
           t.string :contact
@@ -9,6 +9,6 @@ class CreateFarmers < ActiveRecord::Migration[6.1]
         end
       end
 
-    end
-  end
-end
+# rake db:rollback
+# rake db:migrate
+# rake db:seed

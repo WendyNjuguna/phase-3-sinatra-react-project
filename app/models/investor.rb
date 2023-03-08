@@ -1,4 +1,4 @@
-# class Investor < ActiveRecord::Base
-#     has_many :farmers
+class Investor < ActiveRecord::Base
+    has_many :farmers
   
-# end
+end
